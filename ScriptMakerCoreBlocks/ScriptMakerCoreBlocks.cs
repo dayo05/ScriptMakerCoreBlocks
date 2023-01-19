@@ -19,8 +19,9 @@ namespace ScriptMakerCoreBlocks
                 .Append("TextFont", "")
                 .Append("TextColor", "ffffff"), typeof(TextEditDialog), "Text");
             BlockHandler.RegisterBlock(typeof(DelayBlock), new Option("Context", "DelayContext")
-                .Append("Type", "Arrow")
-                .Append("Time", "0"), typeof(DelayContextEditDialog), "Delay");
+                .Append("Type", "Key")
+                .Append("Time", "0")
+                .Append("Key", "^0"), typeof(DelayContextEditDialog), "Delay");
             BlockHandler.RegisterBlock(typeof(ButtonBlock), new Option("Context", "ButtonContext")
             .Append("ButtonX", 0.0)
             .Append("ButtonY", 0.0)
